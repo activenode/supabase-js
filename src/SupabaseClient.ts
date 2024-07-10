@@ -194,7 +194,8 @@ export default class SupabaseClient<
     options: {
       head?: boolean
       get?: boolean
-      count?: 'exact' | 'planned' | 'estimated'
+      count?: 'exact' | 'planned' | 'estimated',
+      additionalHeaders?: Record<string, string>
     } = {}
   ): PostgrestFilterBuilder<
     Schema,
